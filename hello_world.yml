@@ -2,7 +2,6 @@
   hosts: all
   tasks:
     - name: Hello Message
-      debug:
-        msg: "Hello World!"
+      shell: echo "Hello World!"
       when: false
 
