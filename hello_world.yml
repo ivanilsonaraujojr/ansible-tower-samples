@@ -17,8 +17,8 @@
     - name: Hello Message Shell
       shell: echo "Hello World!"
 
-  - name: Install the latest version of Apache
-    yum:
-      name: httpd
-      state: latest
-    when: false
+    - name: Install the latest version of Apache
+      yum:
+        name: httpd
+        state: latest
+      when: false
