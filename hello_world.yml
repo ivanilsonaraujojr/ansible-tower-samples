@@ -1,8 +1,18 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-    - name: Hello Message
+    - name: Hello Message Debug Skipped
       debug: 
         msg: echo "Hello World!"
       when: false
 
+    - name: Hello Message Shell Skipped
+      shell: echo "Hello World!"
+      when: false
+
+    - name: Hello Message Debug
+      debug: 
+        msg: echo "Hello World!"
+
+    - name: Hello Message Shell
+      shell: echo "Hello World!"
